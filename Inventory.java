@@ -25,8 +25,6 @@ class Inventory {
             System.out.println("Product not found!");
         }
     }
-
-    // Display Inventory
     public void displayInventory() {
         for (Product p : inventory.values()) {
             p.display();
