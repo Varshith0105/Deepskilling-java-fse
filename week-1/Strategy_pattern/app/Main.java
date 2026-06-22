@@ -9,11 +9,9 @@ public class Main {
 
         PaymentContext context = new PaymentContext();
 
-        // Use Credit Card
         context.setStrategy(new CreditCardPayment("1234-5678-9012"));
         context.executePayment(5000);
 
-        // Switch to PayPal at runtime
         context.setStrategy(new PayPalPayment("user@example.com"));
         context.executePayment(2000);
     }
