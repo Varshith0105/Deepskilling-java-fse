@@ -1,9 +1,9 @@
 package app;
 
-import receiver.Light;
-import command.LightOnCommand;
 import command.LightOffCommand;
+import command.LightOnCommand;
 import invoker.RemoteControl;
+import receiver.Light;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,11 +15,9 @@ public class Main {
 
         RemoteControl remote = new RemoteControl();
 
-        // Turn ON
         remote.setCommand(lightOn);
         remote.pressButton();
 
-        // Turn OFF
         remote.setCommand(lightOff);
         remote.pressButton();
     }

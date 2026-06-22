@@ -11,6 +11,9 @@ class Product {
         this.price = price;
     }
 
+    public Product(int i, String string, String string2) {
+    }
+
     public void display() {
         System.out.println(productId + " | " + productName + " | Qty: " + quantity + " | Price: " + price);
     }
