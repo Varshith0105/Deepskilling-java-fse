@@ -3,7 +3,6 @@ import org.slf4j.LoggerFactory;
 
 public class LoggingExample {
 
-    // Creating logger object
     private static final Logger logger =
             LoggerFactory.getLogger(LoggingExample.class);
 
